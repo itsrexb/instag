@@ -1,0 +1,160 @@
+#dashboard-container {
+
+	#main-container {
+
+		.tab-panel-container {
+
+			.tab {
+				/* Right Sidebar Events Icons */
+				i {
+					/* FA Start */
+					&.fa-started,
+					&.fa-event-start {
+						padding:12px 12px 12px 15px;
+						background-color:#63BC46;
+						&:before {
+							content:"\f04b";
+						}
+					}
+					/* FA Stop */
+					&.fa-stopped,
+					&.fa-event-stop {
+						padding: 12px 13px;
+						background: #BE2E21;
+						&:before {
+							content:"\f0c8";
+						}
+					}
+					/* FA No Sources */
+					&.fa-event-stop_no_activity {
+						padding: 12px;
+						background: #BE2E21;
+						&:before {
+							content:"\f071";
+						}
+					}
+					/* FA Disconnected */
+					&.fa-event-stop_invalid_token,
+					&.fa-reconnect,
+					&.fa-chain-broken {
+						padding: 12px 12.5px;
+						background-color: #BE2E21;
+						&:before {
+							content:"\f127";
+						}
+					}
+					&.fa-event-reconnected {
+						padding: 12px 13px;
+						background: #FFB600;
+						&:before {
+							content: "\f021";
+						}
+					}
+					/* FA Expired */
+					&.fa-event-stop_expired,
+					&.fa-expired {
+						padding: 12px 13px;
+						background-color: #BE2E21;
+						&:before {
+							content:"\f017";
+						}
+					}
+					/* FA Blocked */
+					&.fa-event-stop_temp_block {
+						padding:12px 13px;
+						background-color:#BE2E21;
+						&:before {
+							content: "\f05e";
+						}
+					}
+					&.fa-event-stop_request_limit {
+						padding:12px 13px;
+						background-color:#BE2E21;
+						&:before {
+							content:"\f0c8";
+						}
+					}
+					/* FA Sleep */
+					&.fa-sleeping,
+					&.fa-event-start_sleep {
+						padding:12px 13px;
+						background-color:#9FCFE3;
+						&:before {
+							content:"\f186";
+						}
+					}
+					&.fa-event-end_sleep {
+						padding: 12px;
+						background: #FFB600;
+						&:before {
+							content: "\f185";
+						}
+					}
+					/* FA Follow */
+					&.fa-follow,
+					&.fa-arrow-up,
+					&.fa-event-start_follow,
+					&.fa-event-start_follow_settings {
+						padding: 12px 12.5px;
+						background-color:#916B52;
+						&:before {
+							content: "\f062";
+						}
+					}
+					/* FA Unfollow */
+					&.fa-unfollow,
+					&.fa-arrow-down,
+					&.fa-event-start_unfollow,
+					&.fa-event-start_unfollow_max_limit,
+					&.fa-event-start_unfollow_settings {
+						padding: 12px 12.5px;
+						background-color:#916B52;
+						&:before {
+							content:"\f063";
+						}
+					}
+					/* FA Hashtags */
+					&.fa-event-tag {
+						padding: 12px;
+						background-color:#8137B0;
+						font-weight: 500;
+						&:before {
+							content: "\f292";
+						}
+					}
+					/* FA Event Created */
+					&.fa-event-created {
+						padding: 12px 13.5px;
+						background-color:#8137B0;
+						font-weight: bold;
+						&:before {
+							content: "\f007";
+						}
+					}
+					/* FA Instagram */
+					&.fa-instagram {
+						padding: 12px 13px;
+						background: #8137B0;
+					}
+					/* FA LIKE */
+					&.fa-like {
+						padding: 12px;
+						background: #BE2E21;
+						&:before {
+							content: "\f004";
+						}
+					}
+					&.fa-liker:before {
+						content: "\f08a";
+					}
+					&.fa-commenter:before {
+						content: "\f0e5";
+					}
+					&.fa-follower:before {
+						content: "\f0c0";
+					}
+				}
+			}
+		}
+	}
+}

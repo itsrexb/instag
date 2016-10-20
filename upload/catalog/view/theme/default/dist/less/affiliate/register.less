@@ -1,0 +1,255 @@
+.affiliate-page {
+
+	input {
+		&[type="text"] {
+			padding:10px 15px;
+		}
+	}
+
+	.table {
+		tbody tr {
+			background-color: #FFF;
+
+			&.dark-row {
+				background-color: #f9f9f9;
+			}
+		}
+	}
+	
+	.gold-button {
+		&:hover,
+		&:active, 
+		&:visited {
+			color:#FFF;
+		}
+	}
+}
+/* Chosen */
+.chosen-container {
+	&.chosen-container-single {
+		.chosen-single {
+			width: 100%;
+			height:auto;
+			margin: 0px;
+			padding: 11px 20px;
+			background-color: #f1f3f6;
+			color: #6C6C6C;
+			font-family: "G", Helvetica, Arial, sans-serif;
+			font-size: 1.4rem;
+			box-shadow: none;
+			border-radius: 5px;
+			border: 1px solid #f1f3f6;
+
+			div b {
+				background-position: 0 17px;
+			}
+		}
+
+		.chosen-drop {
+			border:1px solid #e5e5e5;
+			box-shadow: none;
+
+			.chosen-search {
+				font: normal normal normal 14px/1 FontAwesome;
+				&:before {
+					content: "\f002";
+					position: absolute;
+					top: 50%;
+					right: 15px;
+					transform: translate(0,-50%);
+				}
+
+				input {
+					background:none;
+					outline:none;
+				}
+			}
+		}
+	}
+	&.chosen-container-active {
+		&.chosen-with-drop .chosen-single {
+			border:1px solid #e5e5e5;
+			box-shadow: none;
+
+			 div b {
+				margin-top: 0px;
+				background-position: -16px 17px;
+			}
+		}
+	}
+
+	.chosen-results {
+		li {
+			padding: 13px 15px;
+			font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+			font-size: 1.3rem;
+			cursor: pointer;
+			-webkit-transition: .3s;
+			-o-transition: .3s;
+			transition: .3s;
+			&,
+			&:focus,
+			&:active {
+				border:none!important;
+				border-bottom: 1px dashed #f1f3f6!important;
+			}
+			&:hover {
+				background-color: #f9f9f9;
+				color:#666;
+			}
+			&.highlighted {
+				background-color:#f1f3f6;
+				color:#333;
+				border:none;
+				border:1px solid #e5e5e5;
+				border-bottom: 1px dashed #f1f3f6;
+				box-shadow: none;
+			}
+		}
+	}
+}
+/* FORM */
+#register-page.register-affiliate {
+	form {
+		width: 100%;
+		padding: 0px 16%;
+
+		input {
+			width:100%;
+			margin:0px;
+			padding: 18px 20px;
+			background-color: #f1f3f6;
+			color: #6C6C6C;
+			font-family: "G", Helvetica, Arial, sans-serif;
+			font-size: 1.4rem;
+			box-shadow: none;
+			border-radius: 5px;
+			border: 1px solid #f1f3f6;
+			&:focus {
+				box-shadow: 0 0 1px #aaa;
+				outline: none;
+			}
+			&[type="radio"] {
+				width: auto;
+				right: 0px;
+				outline:none;
+				box-shadow: none;
+			}
+		}
+
+		select {
+			width: 100%;
+			margin: 0px;
+			padding: 18px 20px;
+			background-color: #f1f3f6;
+			color: #6C6C6C;
+			font-family: "G", Helvetica, Arial, sans-serif;
+			font-size: 1.4rem;
+			box-shadow: none;
+			border-radius: 5px;
+			border: 1px solid #f1f3f6;
+			&:focus {
+				box-shadow: 0 0 1px #aaa;
+				outline: none;
+			}
+		}
+
+		.buttons {
+			text-align: center;
+
+			input {
+				width:211px;
+				padding:15px auto;
+				background:#FFB600;
+				color:#FFF;
+				font-family: "G", Helvetica, Arial, sans-serif;
+				font-size:1.4rem;
+				font-weight: bold;
+			}
+		}
+
+		.register-terms {
+			width:100%;
+			text-align: center;
+
+			p {
+				margin-bottom:0px;
+				color:#6C6C6C;
+				font-family: "G", Helvetica, Arial, sans-serif;
+				font-size:1.3rem;
+			}
+
+			a,
+			a:hover,
+			a:focus {
+				color:#FFB600;
+				text-decoration: none;
+			}
+		}
+	}
+
+	#newsletter {
+		width:100%;
+		text-align: center;
+		cursor: pointer;
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+#modal-agree.modal {
+
+	.modal-dialog {
+		width: 100%;
+		max-width: 720px;
+		height: 90%;
+		min-height: 500px;
+		margin:0px;
+		.modal-content {
+			width: 100%;
+			height: 90%;
+			padding:0px;
+
+			.modal-header {
+				position: relative;
+				height:79px;
+				background:#6E2C98;
+				border-radius: 4px 4px 0px 0px;
+				padding:18px 10px;
+
+				button {
+					font-size:3rem;
+				}
+
+				h4 {
+					margin: 0;
+					color: #FFF;
+					font-size: 2.5rem;
+				}
+			}
+
+			.modal-body {
+				height: 100%;
+				padding:20px 44px;
+				background:#FFF;
+				overflow-y: scroll;
+				overflow-x: hidden;
+				border-radius: 0px 0px 4px 4px;
+
+				p {
+					font-size:1.5rem;
+					line-height: 3rem;
+				}
+			}
+		}
+	}
+
+	.modal-backdrop {
+		z-index: 3;
+	}
+}

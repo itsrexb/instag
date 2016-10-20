@@ -1,0 +1,90 @@
+/* Add Instagram Form */
+#customer-kickoff form {
+		width: 100%;
+		padding: 0px 16%;
+}
+#customer-kickoff .form-group {
+		position: relative;
+		margin:0px;
+}
+#customer-kickoff .form-group input[type="text"],
+#customer-kickoff .form-group input[type="password"] {
+	width: 100%;
+	margin: 10px 0px;
+	padding: 18px 20px;
+	background-color: #f1f3f6;
+	color: #6C6C6C;
+	font-family: "G", Helvetica, Arial, sans-serif;
+	font-size: 1.4rem;
+	box-shadow: none;
+	border-radius: 5px;
+	border: 1px solid #f1f3f6;
+}
+#customer-kickoff .form-group i {
+		position: absolute;
+		top: 50%;
+		right: 12px;
+		color: #999;
+		font-size: 2.4rem;
+		transform: translate(0%,-50%);
+		transition: .3s;
+}
+#customer-kickoff .form-group i.fa-lock {
+	right:13px;
+}
+#customer-kickoff .buttons {
+	text-align: center;
+}
+#customer-kickoff .buttons button {
+	width: 211px;
+	padding: 18px 20px;
+	background: #FFB600;
+	color: #FFF;
+	font-family: "G", Helvetica, Arial, sans-serif;
+	font-size: 1.4rem;
+	font-weight: bold;
+	outline:none;
+	border:none;
+}
+.buttons button.loading-button#button-add-instagram {
+	color: transparent!important;
+	background: url("../../../image/dashboard/loading.gif") center center no-repeat;
+	background-size: 60px;
+	background-color: #ffb600!important; 
+	transition:0s!important;
+}
+#retry-add-account.loading-button {
+	background-size: 60px;
+}
+#add-instagram-prev {
+	float: left;
+	width: 100%;
+	margin: 5px 0px 0px;
+}
+#add-instagram-next {
+	display:none;
+}
+#kickoff-error-modal button {
+	margin-top:20px;
+}
+.boxed-container p {
+	font-size: 1.4rem;
+	padding: 0 15%;
+}
+@media all and (max-width: 760px) {
+	#customer-kickoff form {
+		padding: 0;
+	}
+	.boxed-container p {
+		padding: 0;
+	}
+	#kickoff-carousel .item#verify-account,
+	#kickoff-carousel .item#verify-account li,
+	#kickoff-carousel .item#verify-account > div,
+	#kickoff-carousel .item#verify-account p {
+		float:left;
+	}
+	#kickoff-carousel .item#verify-account p {
+		width:100%;
+	}
+}

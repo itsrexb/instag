@@ -1,0 +1,158 @@
+.affiliate-page {
+
+	input {
+		&[type="text"] {
+			padding:10px 15px;
+		}
+	}
+
+	.table {
+		tbody tr {
+			background-color: #FFF;
+
+			&.dark-row {
+				background-color: #f9f9f9;
+			}
+		}
+	}
+	
+	.gold-button {
+		&:hover,
+		&:active, 
+		&:visited {
+			color:#FFF;
+		}
+	}
+}
+/* Chosen */
+.chosen-container {
+	&.chosen-container-single {
+		.chosen-single {
+			width: 100%;
+			height:auto;
+			margin: 0px;
+			padding: 11px 20px;
+			background-color: #f1f3f6;
+			color: #6C6C6C;
+			font-family: "G", Helvetica, Arial, sans-serif;
+			font-size: 1.4rem;
+			box-shadow: none;
+			border-radius: 5px;
+			border: 1px solid #f1f3f6;
+
+			div b {
+				background-position: 0 17px;
+			}
+		}
+
+		.chosen-drop {
+			border:1px solid #e5e5e5;
+			box-shadow: none;
+
+			.chosen-search {
+				font: normal normal normal 14px/1 FontAwesome;
+				&:before {
+					content: "\f002";
+					position: absolute;
+					top: 50%;
+					right: 15px;
+					transform: translate(0,-50%);
+				}
+
+				input {
+					background:none;
+					outline:none;
+				}
+			}
+		}
+	}
+	&.chosen-container-active {
+		&.chosen-with-drop .chosen-single {
+			border:1px solid #e5e5e5;
+			box-shadow: none;
+
+			 div b {
+				margin-top: 0px;
+				background-position: -16px 17px;
+			}
+		}
+	}
+
+	.chosen-results {
+		li {
+			padding: 13px 15px;
+			font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+			font-size: 1.3rem;
+			cursor: pointer;
+			-webkit-transition: .3s;
+			-o-transition: .3s;
+			transition: .3s;
+			&,
+			&:focus,
+			&:active {
+				border:none!important;
+				border-bottom: 1px dashed #f1f3f6!important;
+			}
+			&:hover {
+				background-color: #f9f9f9;
+				color:#666;
+			}
+			&.highlighted {
+				background-color:#f1f3f6;
+				color:#333;
+				border:none;
+				border:1px solid #e5e5e5;
+				border-bottom: 1px dashed #f1f3f6;
+				box-shadow: none;
+			}
+		}
+	}
+}
+#profile-affiliate {
+	form {
+		padding: 0px 16%;
+
+		input,
+		select {
+			width: 100%;
+			margin: 10px 0px;
+			padding: 18px 20px;
+			background-color: #f1f3f6;
+			color: #6C6C6C;
+			font-family: "G", Helvetica, Arial, sans-serif;
+			font-size: 1.4rem;
+			box-shadow: none;
+			border-radius: 5px;
+			border: 1px solid #f1f3f6;
+		}
+
+		input[type="radio"] {
+			width: auto;
+			right: 15px;
+			margin: 5px auto;
+		}
+		
+		.gold-button {
+			width:auto;
+			margin:0 auto;
+			padding:15px 25px;
+			background-color: #FFB600;
+			color:#FFF;
+			font-size: 1.4rem;
+			border-radius: 5px;
+			border: 1px solid transparent;
+			&:hover {
+				background-color: #FFB600;
+				color:#FFF;
+			}
+			&.back-button {
+				float:left;
+			}
+		}
+	}
+}
+@media all and (max-width: 760px) {
+	#profile-affiliate.boxed-container .row form {
+		padding:0px;
+	}
+}

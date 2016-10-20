@@ -1,0 +1,142 @@
+/* GENERAL STYLING  */
+body {
+  width: 100%;
+  background-color:#FFF;
+  color: #666;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+}
+#loader {
+  position:fixed;
+  top:0px;
+  left:0px;
+  width:100%;
+  height:100%;
+  background:#8137B0;
+  z-index: 100;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+#loader .loader {
+  width:50px;
+  height:50px;
+  margin-top:-25px;
+  margin-left:-25px;
+}
+.loader {
+  position:absolute;
+  top:50%;
+  left:50%;
+  width:22px;
+  height:22px;
+  margin-top:-11px;
+  margin-left:-11px;
+  background-size:100%;
+  text-align: center;
+  border-radius: 3px;
+}
+.loading {
+  opacity:.5!important;
+  display:block!important;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+.nomargin {
+  margin:0px;
+}
+h1,h2,h3,h4,h5,h6,p,small,button {
+  color:#6C6C6C;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+hr {
+  border-top: 1px solid #e3e3e3;
+}
+.loading-button {
+  color:transparent!important;
+  background:url('../../image/dashboard/loading.gif') center center no-repeat;
+  background-size:50%;
+  background-color: #ffb600!important;
+}
+.no-background {
+  background:transparent!important;
+  background-color:transparent!important;
+}
+
+/* Default font size */
+.fa {
+  font-size: 14px;
+}
+h1 .fa, h2 .fa, h3 .fa {
+  font-size: inherit;
+}
+.btn .fa {
+  font-size: inherit;
+}
+
+/* Override the bootstrap defaults */
+h1 {
+  font-size: 33px;
+}
+h2 {
+  font-size: 27px;
+}
+h3 {
+  font-size: 21px;
+}
+h4 {
+  font-size: 15px;
+}
+h5 {
+  font-size: 12px;
+}
+h6 {
+  font-size: 10.2px;
+}
+a {
+  color: #23a1d1;
+}
+a:hover {
+  text-decoration: none;
+}
+
+/* Buttons */
+.buttons {
+  margin: 1em 0;
+}
+.btn {
+  font-size: 12px;
+}
+.btn-xs {
+  font-size: 9px;
+}
+.btn-sm {
+  font-size: 10.2px;
+}
+.btn-lg {
+  padding: 10px 16px;
+  font-size: 15px;
+}
+.btn-group > .btn, .btn-group > .dropdown-menu, .btn-group > .popover {
+  font-size: 12px;
+}
+.btn-group > .btn-xs {
+  font-size: 9px;
+}
+.btn-group > .btn-sm {
+  font-size: 10.2px;
+}
+.btn-group > .btn-lg {
+  font-size: 15px;
+}
+.btn-group > .btn-group-addon:hover, .btn-group > .btn-group-addon:active {
+  background-color: #fff;
+  border-color: #ccc;
+  box-shadow: none;
+  color: #333;
+  cursor: default;
+  z-index: 0;
+}

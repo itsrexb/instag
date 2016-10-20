@@ -1,0 +1,160 @@
+/* Tooltips */
+#tooltip-container {
+	position: fixed;
+	top:auto;
+	right:auto;
+	bottom:auto;
+	left:auto;
+	width: 250px;
+	display:none;
+	z-index: 1010;
+
+	#tooltip {
+		float:left;
+		width: 100%;
+		padding:15px;
+		text-align: center;
+		opacity:0;
+		border-radius: 6px;
+		-webkit-transition: .3s;
+		-o-transition: .3s;
+		transition: .3s;
+		&:after {
+			content: "";
+			position: absolute;
+			top:auto;
+			right:auto;
+			bottom:auto;
+			left:auto;
+			width: 10px;
+			height: 10px;
+			transform: rotate(45deg);
+		}
+		/* Position Templates */
+		&.top {
+			margin-top:-20px;
+			transform:translateX(-50%);
+			&:after {
+				bottom:-5px;
+				right:50%;
+				margin-right:-5px;
+			}
+		}
+		&.right {
+			margin-left:20px;
+			transform:translateY(-50%);
+			&:after {
+				left:-5px;
+				top:50%;
+				margin-top:-5px;
+			}
+		}
+		&.bottom {
+			margin-top:20px;
+			transform:translateX(-50%);
+			&:after {
+				top:-5px;
+				right:50%;
+				margin-right:-5px;
+			}
+		}
+		&.left {
+			margin-left:-20px;
+			transform:translateY(-50%);
+			&:after {
+				right:-5px;
+				top:50%;
+				margin-top:-5px;
+			}
+		}
+		/* Size Templates */
+		&.wide {
+			width: 355px;
+		}
+		/* Color Templates */
+		&.light {
+			background-color: #EEEFF3;
+			color: #6C6C6C;
+			&:after {
+				background-color: #EEEFF3;
+			}
+			
+			h4, p {
+				color: #6C6C6C;
+			}
+		}
+		&.dark {
+			background-color: #333;
+			color: #EEEFF3;
+			&:after {
+				background-color: #333;
+			}
+
+			h4, p {
+				color: #EEEFF3;
+			}
+		}
+
+		h4 {
+			margin:0px 0px 10px;
+			font-size: 1.4rem;
+			font-weight: bold;
+		}
+
+		p {
+			margin:0px;
+			font-size: 1.3rem;
+			line-height: 1.7rem;
+			& + p {
+				margin: 0px auto 10px;
+			}
+		}
+
+		span {
+			color:#23a1d1;
+			cursor:pointer;
+		}
+
+		img {
+			width: 50%;
+			margin: 10px 0px;
+			border-right: 1px solid #DDD;
+			padding: 0px 10px 0px 0px;
+		}
+
+		ul {
+			margin:0px auto;
+			padding:0px;
+			text-align: left;
+			list-style: none;
+		}
+
+		.tooltip-verify {
+			border-right: none;
+			border-left: 1px solid #DDD;
+			padding: 0px 0px 0px 10px;
+		}
+	}
+}
+
+@media all and (max-width: 730px) {
+	#tooltip-container {
+		left:1%;
+		width: 98%;
+
+		#tooltip {
+			display:none;
+
+			&.wide {
+				display: block;
+				width: 100%;
+				font-size: 1rem;
+				transform:translateX(0%);
+
+				ul {
+					font-size: 1.1rem;
+				}
+			}
+		}
+	}
+}

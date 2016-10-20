@@ -1,0 +1,84 @@
+.affiliate-page input[type="text"] {
+  padding: 10px 15px;
+}
+.affiliate-page .table tbody tr {
+  background-color: #FFF;
+}
+.affiliate-page .table tbody tr.dark-row {
+  background-color: #f9f9f9;
+}
+.affiliate-page .gold-button:hover,
+.affiliate-page .gold-button:active,
+.affiliate-page .gold-button:visited {
+  color: #FFF;
+}
+/* Chosen */
+.chosen-container.chosen-container-single .chosen-single {
+  width: 100%;
+  height: auto;
+  margin: 0px;
+  padding: 11px 20px;
+  background-color: #f1f3f6;
+  color: #6C6C6C;
+  font-family: "G", Helvetica, Arial, sans-serif;
+  font-size: 1.4rem;
+  box-shadow: none;
+  border-radius: 5px;
+  border: 1px solid #f1f3f6;
+}
+.chosen-container.chosen-container-single .chosen-single div b {
+  background-position: 0 17px;
+}
+.chosen-container.chosen-container-single .chosen-drop {
+  border: 1px solid #e5e5e5;
+  box-shadow: none;
+}
+.chosen-container.chosen-container-single .chosen-drop .chosen-search {
+  font: normal normal normal 14px/1 FontAwesome;
+}
+.chosen-container.chosen-container-single .chosen-drop .chosen-search:before {
+  content: "\f002";
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translate(0, -50%);
+}
+.chosen-container.chosen-container-single .chosen-drop .chosen-search input {
+  background: none;
+  outline: none;
+}
+.chosen-container.chosen-container-active.chosen-with-drop .chosen-single {
+  border: 1px solid #e5e5e5;
+  box-shadow: none;
+}
+.chosen-container.chosen-container-active.chosen-with-drop .chosen-single div b {
+  margin-top: 0px;
+  background-position: -16px 17px;
+}
+.chosen-container .chosen-results li {
+  padding: 13px 15px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 1.3rem;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+.chosen-container .chosen-results li,
+.chosen-container .chosen-results li:focus,
+.chosen-container .chosen-results li:active {
+  border: none!important;
+  border-bottom: 1px dashed #f1f3f6!important;
+}
+.chosen-container .chosen-results li:hover {
+  background-color: #f9f9f9;
+  color: #666;
+}
+.chosen-container .chosen-results li.highlighted {
+  background-color: #f1f3f6;
+  color: #333;
+  border: none;
+  border: 1px solid #e5e5e5;
+  border-bottom: 1px dashed #f1f3f6;
+  box-shadow: none;
+}

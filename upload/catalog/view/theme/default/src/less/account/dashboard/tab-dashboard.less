@@ -1,0 +1,337 @@
+#dashboard-container {
+
+	.tab-panel-container {
+
+		#dashboard.tab {
+
+			.card {
+				&#my-influence {
+					width: ~"calc(50% - 30px)";
+					min-width: 271px;
+					max-width: 572px;
+
+					.followers-number {
+						float:left;
+						width:50%;
+						padding: 0px 10px;
+						text-align: center;
+						overflow: visible;
+						&:first-child {
+							border-right:1px solid #EEE;
+						}
+
+						.followers-count-date {
+							font-weight: bold;
+						}
+
+						span.oldest-followers,
+						span.current-followers {
+							width: 100%;
+							text-align: center;
+							float: left;
+							font-size: 2.5rem;
+							font-weight: bold;
+							line-height: 3rem;
+						}
+
+						span.followers-difference {
+							float: left;
+							width: 100%;
+							margin: 5px auto;
+							font-size: 1.4rem;
+							font-weight: bold;
+							text-align: center;
+
+							span.positive-difference {
+								color:#50af33;
+							}
+							span.negative-difference {
+								color:#BE2E21;
+							}
+						}
+					}
+
+					.followers-comment {
+						float: left;
+						width: 100%;
+						padding-top:15px;
+						text-align: center;
+
+						p {
+							text-align: left;
+						}
+
+						button {
+							width:100%;
+						}
+					}
+				}
+				&#chart-card {
+					width: ~"calc(50% - 30px)";
+					min-width:271px;
+					max-width:572px;
+
+					#chart-data {
+						margin-bottom:0px;
+					}
+					.chart-body {
+						height:200px!important;
+					}
+					.fa-refresh {
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						-webkit-transform: translate(-50%,-50%);
+						   -moz-transform: translate(-50%,-50%);
+						    -ms-transform: translate(-50%,-50%);
+						     -o-transform: translate(-50%,-50%);
+						        transform: translate(-50%,-50%);
+					}
+					.fa-cogs {
+						margin: 0 auto 15px;
+						font-size: 4em;
+					}
+					#chart {
+						min-height: 200px;
+					}
+				}
+				&#top-sources {
+					position:relative;
+					width: ~"calc(100% - 30px)";
+					min-width: 271px;
+					max-width: 1174px;
+					min-height:250px;
+
+					#top-sources-range {
+						float:right;
+						width: auto;
+						padding: 8px 20px;
+					
+						span {
+							margin-left:5px;
+						}
+					}
+
+					.dropdown ul.dropdown-menu {
+						top: 35px;
+						left: auto;
+						right: 0px;
+						width:auto;
+						padding: 0px;
+						transform: translate(0);
+					}
+
+					.card-content {
+						padding:0px 20px!important;
+
+						#sources-table {
+							
+							.table-header {
+								float: left;
+								width: 100%;
+								padding: 0px;
+
+								div {
+									float: left;
+									width:12.5%;
+									padding:10px;
+									font-weight:bold;
+									line-height: normal;
+									&.sources-header {
+										width:25%;
+										text-align:left;
+									}
+									&.col-commenters {
+										border-left: 1px solid #D5D5D5;
+									}
+									&.col-followbacks {
+										border-right: 1px solid #D5D5D5;
+									}
+									&#followback-heading {
+										width:50%;
+										margin: 20px 12.5% 0 37.5%;
+										font-weight: 700;
+										border: 1px solid #D5D5D5;
+										background: #F1F3F6;
+										border-radius: 5px 5px 0 0;
+									}
+								}
+							}
+
+							.table-body {
+								.table-row {
+									float:left;
+									position: relative;
+									width:100%;
+									padding:0px;
+									&.bg-stripe {
+										background: #F1F3F6;
+									}
+									&.bold {
+										font-weight:bold;
+										text-transform:capitalize;
+									}
+
+									div {
+										float:left;
+										width:12.5%;
+										padding:10px;
+										&.users-column {
+											width:25%;
+											text-align:left;
+											&.active-source {
+												i.fa-trash {
+													display:block;
+												}
+											}
+
+											i.fa-trash {
+												position:absolute;
+												top:50%;
+												right:10px;
+												transform:translate(0,-50%);
+												display:none;
+												cursor:pointer;
+												&:hover {
+													color:#BE2E21;
+												}
+											}
+										}
+										&.col-commenters {
+											border-left: 1px solid #D5D5D5;
+										}
+										&.col-followbacks {
+											border-right: 1px solid #D5D5D5;
+										}
+									}
+
+									.fa-tag:before {
+										content: "\f292";
+									}
+
+									.fa-location:before {
+										content: "\f041";
+									}
+								}
+							}
+						}
+					}
+
+					#top-sources-empty {
+						padding:30px;
+
+						i {
+							margin: 0 auto 15px;
+							font-size: 4em;
+						}
+					}
+
+					i {
+						&.fa-unfollow {
+							display:none;
+						}
+						&.fa-spin {
+							position:absolute;
+							top:50%;
+							left:50%;
+							transform:translate(-50%,-50%);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media all and (max-width: 1200px) {
+	#dashboard-container {
+
+		.tab-panel-container {
+
+			#dashboard.tab {
+				#top-sources.card {
+					.card-content #sources-table {
+						
+						.table-header {
+
+							div {
+								width:30%;
+							}
+
+							div.sources-header {
+								width:40%;
+							}
+
+							div#followback-heading {
+								display:none
+							}
+						}
+						
+						.table-body .table-row {
+
+							div {
+								width:30%;
+							}
+
+							div.users-column {
+								width:40%;
+							}
+						}
+
+						.col-commenters,
+						.col-likers,
+						.col-followers,
+						.col-followbacks {
+							display:none;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media all and (max-width: 1024px) {
+	#dashboard-container {
+
+		.tab-panel-container {
+
+			#dashboard.tab {
+
+				.card {
+					&#my-influence,
+					&#chart-card,
+					&#top-sources {
+						width:100%;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+@media all and (max-width: 730px) {
+	#dashboard-container {
+
+		#main-container {
+
+			#content {
+
+				#tab-body-middle.middle-tab {
+
+					.tab#dashboard {
+						
+						.card {
+							&#my-influence,
+							&#chart-card {
+								height:auto;
+								min-height: none;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

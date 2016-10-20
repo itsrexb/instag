@@ -1,0 +1,48 @@
+#profile-affiliate {
+	form {
+		padding: 0px 16%;
+
+		input,
+		select {
+			width: 100%;
+			margin: 10px 0px;
+			padding: 18px 20px;
+			background-color: #f1f3f6;
+			color: #6C6C6C;
+			font-family: "G", Helvetica, Arial, sans-serif;
+			font-size: 1.4rem;
+			box-shadow: none;
+			border-radius: 5px;
+			border: 1px solid #f1f3f6;
+		}
+
+		input[type="radio"] {
+			width: auto;
+			right: 15px;
+			margin: 5px auto;
+		}
+		
+		.gold-button {
+			width:auto;
+			margin:0 auto;
+			padding:15px 25px;
+			background-color: #FFB600;
+			color:#FFF;
+			font-size: 1.4rem;
+			border-radius: 5px;
+			border: 1px solid transparent;
+			&:hover {
+				background-color: #FFB600;
+				color:#FFF;
+			}
+			&.back-button {
+				float:left;
+			}
+		}
+	}
+}
+@media all and (max-width: 760px) {
+	#profile-affiliate.boxed-container .row form {
+		padding:0px;
+	}
+}

@@ -1,0 +1,221 @@
+/* PAYMENT */
+#payment {
+  position:relative;
+}
+#payment.braintree-payment #paypal-button #braintree-paypal-loggedin {
+  border-bottom: none !important;
+  border-top: none !important;
+}
+#payment.braintree-payment .label-separator {
+  margin-bottom: 1em;
+  text-align: center;
+}
+#payment.braintree-payment .label-separator div {
+  position: relative;
+  top: 0.9em;
+  height: 1px;
+  background-color: #e3e3e3;
+}
+#payment.braintree-payment .label-separator span {
+  background-color: #ffffff;
+  padding: 0 1em;
+  position: relative;
+}
+#payment.braintree-payment .label-separator span {
+  background-color: #ffffff;
+  padding: 0 1em;
+  position: relative;
+}
+#payment .existing-payment-methods {
+  margin-bottom: 20px;
+}
+#payment .credit-card-info {
+  overflow: auto;
+}
+#payment #card-number-container {
+  position: relative;
+}
+#payment #card-number-container .help-icon {
+  display: none;
+  position: absolute;
+  right: 1em;
+  top: 3px;
+  background-image: url(/catalog/view/theme/default/image/braintree_sprite.png);
+  width: 44px;
+  height: 35px;
+}
+#payment #card-number-container.amex .help-icon {
+  display: block;
+  background-position: 0 -347px;
+}
+#payment #card-number-container.dinersclub .help-icon {
+  display: block;
+  background-position: 12px -124px;
+}
+#payment #card-number-container.discover .help-icon {
+  display: block;
+  background-position: 5px -151px;
+}
+#payment #card-number-container.jcb .help-icon {
+  display: block;
+  background-position: 10px -208px;
+}
+#payment #card-number-container.maestro .help-icon {
+  display: block;
+  background-position: 8px -236px;
+}
+#payment #card-number-container.mastercard .help-icon {
+  display: block;
+  background-position: 8px -263px;
+}
+#payment #card-number-container.visa .help-icon {
+  display: block;
+  background-position: 6px -375px;
+}
+#payment #card-number-container.elo .help-icon {
+  display: block;
+  background-position: 6px -433px;
+}
+#payment #card-expiration-date-container {
+  padding-left: 0;
+  padding-right: 8px;
+}
+#payment #card-cvv-container {
+  padding-left: 7px;
+  padding-right: 0;
+  position: relative;
+}
+#payment #card-cvv-container .help-icon {
+  display: none;
+  position: absolute;
+  right: 1em;
+  top: 6px;
+  background-color: #fff;
+  background-image: url(/catalog/view/theme/default/image/braintree_sprite.png);
+  border: 1px solid #ccc;
+  width: 46px;
+  height: 30px;
+}
+#payment #card-cvv-container.focused.amex .help-icon {
+  display: block;
+  background-position: 0px -296px;
+}
+#payment #card-cvv-container.focused.dinersclub .help-icon,
+#payment #card-cvv-container.focused.discover .help-icon,
+#payment #card-cvv-container.focused.jcb .help-icon,
+#payment #card-cvv-container.focused.maestro .help-icon,
+#payment #card-cvv-container.focused.mastercard .help-icon,
+#payment #card-cvv-container.focused.visa .help-icon,
+#payment #card-cvv-container.focused.elo .help-icon {
+  display: block;
+  background-position: 0px -100px;
+}
+#payment .dropdown-select {
+  display:block;
+}
+#payment .dropdown-select button,
+#payment .dropdown-select li {
+  position: relative;
+}
+.payment-method-image {
+  position: absolute;
+  top:10px;
+  left:15px;
+  width: 35px;
+  height: 20px;
+  background-image: url(/catalog/view/theme/default/image/braintree_sprite.png);
+}
+.payment-method-image.amex,
+.payment-method-image.american-express {
+  background-position: -5px 110px;
+}
+.payment-method-image.dinersclub {
+  background-position: -5px 336px;
+}
+.payment-method-image.discover {
+  background-position: -5px 310px;
+}
+.payment-method-image.jcb {
+  background-position: -5px 252px;
+}
+.payment-method-image.mastercard {
+  background-position: -5px 195px;
+}
+.payment-method-image.maestro {
+  background-position: -5px 223px;
+}
+.payment-method-image.paypal {
+  background-position: -5px 56px;
+}
+.payment-method-image.visa {
+  background-position: -5px 83px;
+}
+.payment-method-image.elo {
+  background-position: -5px 25px;
+}
+#payment .dropdown-select ul {
+  top: 43px;
+  width:100%;
+}
+#billing .row #payment .dropdown-select button,
+#billing .row #payment .dropdown-select ul li {
+  padding-left:60px;
+}
+#billing .row #payment .dropdown-select ul li#add-payment-method {
+  padding-left:0px;
+}
+#billing .row #payment .dropdown-select button.new-payment {
+  padding-left:15px;
+}
+#billing .row #payment .dropdown-select button.new-payment p {
+  width:100%;
+  text-align: center;
+}
+#billing .row #payment .dropdown-select button p,
+#billing .row #payment .dropdown-select ul li p {
+  margin:0px;
+  text-align: left;
+}
+#billing .row #payment .dropdown-select ul li#add-payment-method p {
+  text-align: center;
+}
+#billing .row #payment .dropdown-select button p {
+  float:left;
+}
+#billing .row #payment .dropdown-select button span {
+  color:#23a1d1;
+}
+#billing .row #payment .dropdown-select ul li span {
+  display:none;
+}
+#payment  select {
+  display:none;
+}
+#payment #change-payment-method {
+  display:none;
+}
+#payment #braintree-paypal-loggedout a {
+  margin: 0px auto 10px;
+}
+@media all and (max-width: 755px) {
+  header.fixed #logo #logo-u-container {
+    display:block;
+  }
+  #payment .dropdown-select {
+    display:none;
+  }
+  #payment #change-payment-method {
+    display:block;
+  }
+  #payment select {
+    width:100%;
+    padding:10px;
+    display:block;
+  }
+  #payment #card-cvv-container {
+    padding-left:0px;
+  }
+  #payment #card-expiration-date-container {
+    padding-right:0px;
+  }
+}

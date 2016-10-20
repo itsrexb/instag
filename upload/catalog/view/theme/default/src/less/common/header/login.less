@@ -1,0 +1,163 @@
+.modal-shadow {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}
+#login-modal {
+  display: block;
+  opacity:0;
+  z-index: -1;
+  -webkit-transition: .8s;
+  -o-transition: .8s;
+  transition: .8s;
+}
+#login-modal a,
+#login-modal a:hover {
+  color:#FFB600;
+  outline:none;
+  font-family: "G", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+#login-modal .modal-dialog {
+  width:375px;
+}
+#login-modal .modal-dialog .modal-content {
+  width:100%;
+}
+#login-modal .modal-dialog .modal-content h4 {
+  margin-top: 0px;
+  color: #fff;
+  font-family: 'G', Helvetica, Arial, sans-serif;
+}
+#login-modal .modal-dialog .modal-content p {
+  color: #fff;
+  font-family: 'G', Helvetica, Arial, sans-serif;
+  font-size: 1.15em;
+}
+/* Social Login */
+#login-modal .modal-dialog .modal-content .social-login {
+  text-align: center;
+}
+#login-modal .modal-dialog .modal-content .social-login i {
+  color: #fff;
+  font-size: 2em;
+  border-radius: 5px;
+}
+#login-modal .modal-dialog .modal-content .social-login i.fa-facebook {
+  padding: 10px 15px;
+  background-color: #4d6ba1;
+}
+#login-modal .modal-dialog .modal-content .social-login i.fa-google-plus {
+  margin-left: 20px;
+  padding: 10px 7px;
+  background-color: #c43a2d; 
+}
+#login-modal .modal-dialog .modal-content p.social-password {
+  margin-top: 10px;
+}
+#login-modal .modal-dialog .modal-content .login-separator {
+  position: relative;
+  margin: 35px 0;
+  border-bottom: 1px solid #404040;
+}
+#login-modal .modal-dialog .modal-content .login-separator div {
+  position: absolute;
+  top: -8px;
+  width: 100%;
+  background-color: transparent;
+  text-align: center;
+}
+#login-modal .modal-dialog .modal-content .login-separator span {
+  padding: 0 10px;
+  background-color: #333333;
+  color: #fff;
+  font-family: 'G', Helvetica, Arial, sans-serif;
+  font-size: 1.3em;
+}
+/* Login Modal Form */
+#login-form-container {
+  width:100%;
+}
+#login-form-container input {
+  width:100%;
+  margin: 5px auto;
+  padding:18px 20px;
+  font-size: 1.4em;
+  outline:none;
+  border-radius: 5px;
+  border: 1px solid #f1f3f6;
+}
+.username-container, .password-container {
+  position: relative;
+  width:100%; 
+}
+.username-container .tooltip,
+.password-container .tooltip {
+  bottom:75px!important;
+  border:1px solid #BBB;
+}
+#password-settings {
+  color:#FFF;
+  font-size:1.2rem;
+}
+.remember-password {
+  position: relative;
+  float:left;
+  width: 50%;
+  padding: 10px 5px;
+  padding-left:30px;
+  cursor:pointer;
+}
+.checkbox-container {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  bottom: 10px;
+  width: 20px;
+  background-color: #FFF;
+  border-radius: 3px;
+}
+#checkbox-remember {
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  bottom: 4px;
+  width: 12px;
+  border-radius: 1px;
+}
+#checkbox-remember.checked {
+  background-color: #FFB600;
+}
+.forgot-password {
+  float:right;
+  padding:10px 0px;
+}
+#login-form-container button {
+  width: 100%;
+  margin: 5px auto;
+  padding:15px 0px 11px;
+  background-size:20%;
+  font-family: "G", Helvetica, Arial, sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height:25px;
+}
+.sign-up-link {
+  margin-top:15px;
+  text-align: center;
+}
+.sign-up-link span { 
+  color:#FFF;
+  font-family: "G", Helvetica, Arial, sans-serif;
+  font-size:1.2rem;
+}
+/* Login Modal Errors */
+#login-error {
+  bottom:30px;
+}
+#login-error:after {
+  top: -5px;
+  bottom: auto;
+}

@@ -1,0 +1,99 @@
+/* GENERAL STYLING */
+body {
+	background-color: #F1F3F6;
+	&::-webkit-scrollbar {
+		width: 0px;
+	}
+}
+
+#top,
+.no-display,
+footer,
+.modal-backdrop {
+	display:none;
+}
+
+button.red-button {
+	background-color:#E92E2E;
+}
+
+/* Main */
+#dashboard-container {
+	position: relative;
+	float: left;
+	width: 100%;
+	padding: 60px 373px 0px 240px;
+
+	#content {
+		padding:0px 15px;
+		z-index: 1;
+
+		.select-dropdown {
+			display:none;
+		}
+	}
+}
+
+/* Buttons */
+div.btn-group button.btn {
+	width: 50%;
+	padding: 11px 15px;
+	background-color: #F9F9F9;
+	font-size: 1.3rem;
+	outline: none!important;
+	border-radius: 0 5px 5px 0;
+	border: 1px solid transparent;
+	box-shadow: none;
+	&:focus,
+	&:active:focus,
+	&:active:hover {
+		background-color: #F9F9F9;
+		border-color:transparent;
+	}
+	&:first-child {
+		border-radius: 5px 0 0 5px;
+		border-right:none;
+	}
+	&.active {
+		color: #FFF;
+		font-weight: bold;
+		background-color:#FFB600;
+		border-color: #FFB600;
+	}
+}
+
+#get-plan{
+	cursor: pointer;
+}
+#get-plan:hover{
+	opacity: 0.9;
+}
+
+@media all and (max-width: 1569px) {
+	#dashboard-container {
+		padding-left:60px;
+	}
+}
+
+@media all and (max-width: 1200px) {
+	#dashboard-container {
+		padding-left:0px;
+	}
+}
+
+@media all and (max-width: 730px) {
+	html {
+		overflow-x:hidden;
+	}
+	
+	#dashboard-container {
+		width: 100%;
+		padding-bottom: 25px;
+		padding-right: 0px;
+	}
+
+	div.btn-group {
+		width: 95%;
+		margin: 0px 2.5%;
+	}
+}

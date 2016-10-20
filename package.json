@@ -1,0 +1,32 @@
+{
+  "name": "instag",
+  "version": "1.0.0",
+  "description": "instag is an application that helps users grow their Instagram accounts. This repo is for the frontend development for the application which is visible to the customer. It contains the dashboard customers will use to manage their accounts as well as purchase more time for their accounts. It's framework is based on the OpenCart framework so it has a lot of shopping cart related features built in.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/instagsocial/frontend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/instagsocial/frontend/issues"
+  },
+  "homepage": "https://github.com/instagsocial/frontend#readme",
+  "dependencies": {
+    "grunt": "^1.0.1"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-less": "^1.4.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^1.2.1"
+  }
+}

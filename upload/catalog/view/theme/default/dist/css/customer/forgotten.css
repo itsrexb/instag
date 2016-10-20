@@ -1,0 +1,103 @@
+/* Chosen */
+.chosen-container-single .chosen-single {
+  width: 100%;
+  height: auto;
+  margin: 0px;
+  padding: 11px 20px;
+  background-color: #f1f3f6;
+  color: #6C6C6C;
+  font-family: "G", Helvetica, Arial, sans-serif;
+  font-size: 1.4rem;
+  box-shadow: none;
+  border-radius: 5px;
+  border: 1px solid #f1f3f6;
+}
+.chosen-container-active.chosen-with-drop .chosen-single div b {
+  margin-top: 0px;
+  background-position: -16px 17px;
+}
+.chosen-container-single .chosen-single div b {
+  background-position: 0 17px;
+}
+.chosen-container .chosen-results li.highlighted,
+.chosen-container-active.chosen-with-drop .chosen-single,
+.chosen-container-single .chosen-drop {
+  border: 1px solid #e5e5e5;
+  box-shadow: none;
+}
+.chosen-container .chosen-results li.highlighted {
+  background-color: #f1f3f6;
+  color: #333;
+  border: none;
+  border-bottom: 1px dashed #f1f3f6;
+  box-shadow: none;
+}
+.chosen-container .chosen-results li {
+  padding: 13px 15px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 1.3rem;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+.chosen-container .chosen-results li,
+.chosen-container .chosen-results li:focus,
+.chosen-container .chosen-results li:active {
+  border: none;
+  border-bottom: 1px dashed #f1f3f6;
+}
+.chosen-container .chosen-results li:hover {
+  background-color: #f9f9f9;
+  color: #666;
+}
+/* FORM */
+#profile-page form {
+  width: 100%;
+  padding: 0px 16%;
+}
+#profile-page form input[type="email"],
+#profile-page form input[type="tel"],
+#profile-page form input[type="text"],
+#profile-page form input[type="password"] {
+  width: 100%;
+  margin: 0 0 10px 0;
+  padding: 18px 20px;
+  background-color: #f1f3f6;
+  color: #6C6C6C;
+  font-family: "G", Helvetica, Arial, sans-serif;
+  font-size: 1.4rem;
+  box-shadow: none;
+  border-radius: 5px;
+  border: 1px solid #f1f3f6;
+}
+#profile-page legend {
+  padding: 15px 0px 10px;
+  color: #333;
+  font-family: "G", Helvetica, Arial, sans-serif;
+  font-size: 1.8rem;
+}
+#profile-page fieldset {
+  margin-bottom: 20px;
+}
+#profile-page .form-group {
+  margin: 0px;
+}
+#profile-page form input:focus {
+  box-shadow: 0 0 1px #aaa;
+  outline: none;
+}
+#profile-page form .buttons input {
+  width: 100%;
+}
+/* Chosen */
+#profile-page form .chosen-container-single .chosen-search input {
+  padding-left: 25px;
+  background: none;
+  background-color: #FFF;
+}
+@media all and (max-width: 760px) {
+  #profile-page form {
+    padding: 0;
+  }
+}

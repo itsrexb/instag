@@ -1,0 +1,198 @@
+.modal {
+	&#cancel-account-modal {
+
+		h4 {
+			color:#FFB600;
+		}
+
+		.modal-footer {
+			margin-top:20px;
+		}
+
+		#bigwarning{
+			padding:15px;
+			background-color: #BE2E21;
+			color:#FFF;
+			font-size: 60px;
+			border-radius: 100%;
+		}
+	}
+	&#modal-add-instagram {
+		&.displayed{
+			z-index: 5;
+		}
+		
+		.modal-content {
+			padding:30px 30px;
+
+			.modal-header {
+				padding:0;
+
+				img {
+					width:90px;
+				}
+			}
+
+			.modal-body {
+				#add-instagram-error::after {
+					top:-5px;
+					bottom:auto!important;
+				}
+			}
+
+			.modal-footer {
+
+				p {
+					font-size:1.1rem;
+					&.password-politics {
+						margin-top:30px;
+					}
+				}
+			}
+		}
+
+		.tooltip-container {
+			width:340px;
+
+			.tooltip {
+				p {
+					margin-bottom:10px;
+				}
+			}
+		}
+	}
+	&.warning-modal {
+
+		h3 {
+			color:#FFF;
+			font-weight: bold;
+		}
+
+		img {
+			width: 40%;
+			max-width: 127px;
+		}
+
+		.modal-header {
+			margin-bottom:20px;
+		}
+	}
+	&#expired-modal {
+		z-index: 3;
+	}
+	&#reconnect-modal {
+		z-index: 3;
+		
+		.modal-dialog {
+			position: absolute;
+			top:50%;
+			left:50%;
+			transform:translate(-50%,-50%);
+
+			.modal-content {
+
+				.modal-footer {
+					small {
+						float: left;
+						width: 100%;
+						margin-top: 15px;
+						color:#BFBFBF;
+						font-size:1.1rem;
+					
+						span {
+							position:relative;
+							color:#FFB600;
+							&:hover {
+								cursor:pointer;
+
+								.tooltip {
+									opacity:1;
+									visibility: visible;
+								}
+							}
+
+							.tooltip {
+								position:absolute;
+								left: 50%;
+								width: 280px;
+								background: #FFF;
+								transform: translateX(-50%);
+
+								p {
+									margin-bottom:5px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	&#like-toggle-modal.warning-modal {
+		
+		.modal-content {
+			padding: 30px 50px;
+
+			.modal-header {
+				margin-bottom:0px;
+			}
+		}
+	}
+
+	button {
+		padding: 15px 35px;
+		color:#FFF;
+		font-size: 1.4rem;
+		outline:none;
+		border-radius: 5px;
+		border: none;
+		-webkit-transition: .1s;
+		-o-transition: .1s;
+		transition: .1s;
+	}
+}
+
+@media all and (max-width: 1200px) {
+	#dashboard-container #video-modal .modal-dialog {
+		width:100%;
+	}
+}
+
+@media all and (max-width: 730px) {
+	.modal {
+		&#video-modal {
+			.modal-dialog
+				.modal-content
+					.modal-header
+						.video-container
+							#fullscreen {
+								position:absolute;
+								top:0;
+								left:0;
+								bottom:0;
+								right:0;
+								width:100%;
+								height:100%;
+								background-color: transparent;
+								display:block;
+			}
+		}
+
+		.modal-dialog {
+			width: 100%;
+			margin:0 auto;
+
+			.modal-content {
+				width: 98%;
+				margin:0 auto;
+				padding: 10px 15px;
+				overflow-y:auto;
+			}
+		}
+	}
+
+	.tutorial-separator {
+		width:100%;
+		margin-left:0px;
+	}
+}

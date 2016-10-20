@@ -1,0 +1,190 @@
+#dashboard-container {
+
+	.tab-panel-container {
+
+		.tab#settings {
+			&.upgrade {
+
+				.card {
+					min-height: 286px;
+
+					#follow-upgrade-plan,
+					#unfollow-upgrade-plan {
+						display: block;
+					}
+				}
+			}
+
+			span {
+				display:none;
+				margin-bottom: 7px;
+			}
+
+			.card {
+				min-height: 256px;
+
+				.dropdown-toggle {
+					position:relative;
+					text-transform: capitalize;
+
+					span.caret {
+						position:absolute;
+						top: 50%;
+						right:10px;
+						margin-top: 0px;
+						transform: translate(0,-50%);
+						display:block;
+					}
+				}
+
+				.card-input {
+
+					.input-range {
+						position: relative;
+						height:30px;
+						background-image: url("../../../image/dashboard/range-slider.png");
+						background-repeat: no-repeat;
+						background-size: 100% 40%;
+						background-position: center;
+						outline:none;
+						border-radius: 20px;
+						-webkit-appearance: none;
+					}
+
+					input[type="range"] {
+						&::before {
+							content:"";
+						}
+						/* Webkit input range */
+						&::-webkit-slider-thumb {
+							height: 30px;
+							width: 30px;
+							padding:7px;
+							background: url("../../../image/dashboard/bolt.png");
+							background-size:100%;
+							color:#FFF;
+							border-radius: 100%;
+							-webkit-appearance: none;
+						}
+						&.slow::-webkit-slider-thumb {
+							background-color:#00B017!important;
+						}
+						&.medium::-webkit-slider-thumb {
+							background-color:#FFB600!important;
+						}
+						&.fast::-webkit-slider-thumb {
+							background-color:#BE2E21!important;
+						}
+						/* Moz input range */
+						&::-moz-range-track {
+							position: relative;
+							height:12px;
+							background-image: url("../../../image/dashboard/range-slider.png");
+							background-size: 100% 40%;
+							background-position: center;
+							outline:none;
+							border-radius: 15px;
+						}
+						&::-moz-range-thumb {
+							height:30px;
+							width:30px;
+							margin-top:-8px;
+							background: url("../../../image/dashboard/bolt.png");
+							background-repeat:no-repeat;
+							background-size:cover;
+							border-radius: 100%;
+							border:0;
+						}
+						.slow &::-moz-range-thumb {
+							background-color:#00B017!important;
+						}
+						.medium &::-moz-range-thumb {
+							background-color:#FFB600!important;
+						}
+						.fast &::-moz-range-thumb {
+							background-color:#BE2E21!important;
+						}
+						/* Edge Range */
+						&::-ms-track {
+								width: 100%;
+								height:40px;
+								background-image: url("../../../image/dashboard/range-slider.png");
+								background-color: transparent;
+								background-repeat: no-repeat;
+								background-size: 100% 50%;
+								background-position: center;
+								color: transparent;
+								cursor: pointer;
+								box-sizing: content-box;
+								border: none;
+								border-radius: 15px;
+						}
+						&::-ms-fill-lower {
+							background-color: transparent;
+						}
+						&::-ms-thumb {
+							height: 15px;
+							width: 15px;
+							padding:7px;
+							background: url("../../../image/dashboard/bolt.png") center center no-repeat;
+							background-size:100%;
+							color:#FFF;
+							border-radius: 100%;
+							-webkit-appearance: none;
+						}
+					}
+				}
+
+				#follow-upgrade-plan,
+				#unfollow-upgrade-plan {
+					margin: 15px auto 0px;
+					cursor: pointer;
+					display: none;
+				}
+
+				#follow-range #follow-upgrade-plan,
+				#unfollow-range #unfollow-upgrade-plan {
+					span {
+						display: inline;
+						margin: 0px;
+						text-decoration: underline;
+					}
+				}
+			}
+
+			#sleep-settings {
+				.card {
+					min-height: 215px;
+				}
+			}
+
+		}
+	}
+}
+
+.lang-pt {
+
+	#dashboard-container {
+
+		.tab-panel-container {
+
+			.tab#settings {
+				&.upgrade {
+
+					.card {
+						min-height: 331px;
+						
+						#follow-upgrade-plan,
+						#unfollow-upgrade-plan {
+							float:none;
+						}
+					}
+				}
+
+				.card {
+    				min-height: 275px;
+				}
+			}
+		}
+	}
+}

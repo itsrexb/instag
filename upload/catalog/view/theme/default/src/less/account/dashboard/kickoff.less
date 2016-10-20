@@ -1,0 +1,476 @@
+#dashboard-container {
+
+	#main-container {
+
+		.start-account-button {
+			position:fixed;
+			left: 0px;
+			right: 0px;
+			bottom:0px;
+			width: 100%;
+			padding:15px 25px;
+			background-color:#63BC46;
+			display:none;
+			border-radius: 0px;
+			z-index: 5;
+			&[disabled] {
+				display:none!important;
+			}
+			&.disabled-users,
+			&.disabled-whitelist {
+				background-color:#FFB600;
+			}
+		}
+
+		#kickoff {
+			.lang-pt & {
+				.card {
+					min-height: 504px;
+				}
+			}
+
+			.card {
+				min-height: 486px;
+
+				h3.steps {
+					margin:0px auto 20px;
+				}
+
+				.card-content {
+
+					p:last-child {
+						margin-bottom: 0;
+					}
+
+					small  {
+						float: left;
+						width: 100%;
+						margin-bottom: 2px;
+						font-size: 1.1rem;
+						opacity: .7;
+					}
+				}
+
+				.tutorial-popup {
+					float: left;
+					width:100%;
+					margin: 7px auto;
+					text-align: center;
+					color:#337ab7;
+					cursor: pointer;
+				}
+			}
+
+			.required {
+				color:#BE2E21;
+			}
+		}
+
+		#users {
+			#users-sources-container {
+				float: left;
+				width: 301px;
+			}
+			#source-interests-container {
+				float: left;
+				width: ~"-webkit-calc(100% - 331px)";
+				width: ~"-moz-calc(100% - 331px)";
+				width: ~"calc(100% - 331px)";
+				min-width: 271px;
+
+				#source-interests {
+					width: 100%;
+
+					.or {
+						margin: 0px auto 10px;
+						color: #FFB600;
+						text-align: center;
+					}
+
+					.card-description {
+						max-width: 600px;
+						margin: 0px auto;
+					}
+
+					#source-categories {
+						overflow: auto;
+						& > div {
+							float: left;
+							margin: 10px 0;
+							padding: 0px 30px;
+							text-align: left;
+							width: 25%;
+							min-height: 177px;
+
+							h4 {
+								font-size:1.4rem;
+								font-weight:700;
+							}
+
+							.row {
+								padding:0px;
+								margin:auto -10px;
+
+								button {
+									display: block;
+									padding: 5px 10px;
+									background: transparent;
+									font-size: 1.3rem;
+									border: 0px;
+									outline: none;
+									text-align: left;
+									&:active,
+									&:visited,
+									&:hover {
+										background: transparent;
+									}
+									&.active {
+										color:#63bc46;
+
+										i::before {
+											content:"\f046";
+											padding-right: 0px;
+										}
+									}
+
+									i::before {
+										content:"\f096";
+										padding-right: 2px;
+									}
+								}
+							}
+						}
+						&.disabled > div .row {
+							button {
+								color: #BBB;
+								cursor: not-allowed;
+								&.active {
+									cursor: pointer;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		#whitelist {
+			.cards-row .card#skip-whitelist-card .gold-button[disabled] {
+				background-color:#BBB;
+				cursor:not-allowed;
+			}
+		}
+
+		.kickoff-tab {
+			.card {
+				&.cartoon-card .card-content>div>img {
+					float: none;
+					margin-bottom: 20px;
+					margin-right: 0;
+					width: 40%;
+					max-width: 127px;
+				}
+			}
+		}
+
+		#right-sidebar {
+
+			#right-sidebar-content {
+
+				#rocket-item {
+					padding: 20px 10px;
+					padding-bottom:0px;
+					background: #FFF;
+					text-align: center;
+					border-radius: 6px;
+					border: 1px solid #E5E5E5;
+
+					.row {
+						width:100%;
+						margin:0px;
+						padding: 20px;
+						text-align: left;
+						cursor: pointer;
+						border-top: 1px solid #E5E5E5;
+						&:hover {
+							span.steps, p, i {
+								color:#666;
+							}
+						}
+						
+						p, small, i {
+							margin:0px;
+							color:#999;
+						}
+
+						p {
+							float:left;
+							margin-top:5px;
+						}
+
+						small {
+							float:left;
+							margin-top:4px;
+							margin-left:5px;
+							color:#666;
+						}
+
+						i {
+							float:right;
+							margin-top:10px;
+							&.fa-chevron-right {
+								margin-right:2px;
+							}
+							&.fa-check-circle {
+								margin-top: 5px;
+								color:#00B017;
+								font-size: 2rem;
+							}
+						}
+
+						span {
+							&.steps {
+								float: left;
+								padding: 5px 11px;
+								background: #F9F9F9;
+								color: #999;
+								font-size: 1.6rem;
+								font-weight: bold;
+								border-radius: 100%;
+								margin-right: 10px;
+							}
+						}
+
+						.required {
+							color:#BE2E21;
+						}
+					}
+
+					.gold-button {
+						width:100%;
+						background-color:#63BC46;
+						&[disabled] {
+							background-color: #BBB;
+							cursor: not-allowed;
+						}
+						&.disabled-users,
+						&.disabled-whitelist {
+							background-color:#FFB600;
+						}
+					}
+
+					.start-kickoff-container {
+						cursor:default;
+					}
+				}
+			}
+		}
+	}
+
+	#video-modal {
+		.modal-dialog {
+			width:50%;
+			height:60vh;
+
+			.modal-content {
+				width:100%;
+				height:100%;
+				padding:30px;
+
+				.modal-header {
+					height:100%;
+
+					.video-container {
+						position:relative;
+						width:100%;
+						height:100%;
+
+						iframe {
+							height:100%;
+						}
+
+						#fullscreen {
+							display:none;
+						}
+					}
+				}
+			}
+		}
+
+		#video-loader {
+			position: absolute;
+			top:50%;
+			left:50%;
+			width:50px;
+			height:25px;
+			display:none;
+			background: url('../../../image/dashboard/loading.gif') center center no-repeat;
+			background-size: contain;
+			transform:translate(-50%);
+		}
+	}
+}
+
+@media all and (max-width:1650px) {
+	#source-interests #source-categories > div {
+		width: 33.333333%;
+	}
+}
+@media all and (max-width:1350px) {
+	#source-interests #source-categories > div {
+		width: 50%;
+	}
+}
+@media all and (max-width: 1200px) {
+	.dropdown-menu .start-account {
+		display:none;
+	}
+}
+@media all and (max-width:1100px) {
+	#source-interests #source-categories > div {
+		padding: 0;
+		max-width: 100%;
+		width: 100%;
+		min-height: 0;
+
+		.row {
+			margin: 0;
+
+			button {
+				display: inline;
+			}
+		}
+	}
+}
+
+@media all and (max-width:730px) {
+	#dashboard-container {
+
+		#main-container #content {
+			min-height: 0px;
+
+			.start-account-button {
+				display:block;
+			}
+
+			.tab {
+				padding-bottom:30px;
+				&#start-account {
+
+					#rocket-item {
+						padding: 20px 10px;
+						padding-bottom:0px;
+						background: #FFF;
+						text-align: center;
+						border-radius: 6px;
+						border: 1px solid #E5E5E5;
+
+						.row {
+							width:100%;
+							margin:0px;
+							padding: 20px;
+							text-align: left;
+							cursor: pointer;
+							border-top: 1px solid #E5E5E5;
+							&:hover {
+								span.steps, p, i {
+									color:#666;
+								}
+							}
+							
+							p, small, i {
+								margin:0px;
+								color:#999;
+							}
+
+							p {
+								float:left;
+								margin-top:5px;
+							}
+
+							small {
+								float:left;
+								margin-top:6px;
+								margin-left:5px;
+								color:#666;
+							}
+
+							i {
+								float:right;
+								margin-top:10px;
+								&.fa-chevron-right {
+									margin-right:2px;
+								}
+								&.fa-check-circle {
+									margin-top: 5px;
+									color:#00B017;
+									font-size: 2rem;
+								}
+							}
+
+							span {
+								&.steps {
+									float: left;
+									padding: 5px 11px;
+									background: #F9F9F9;
+									color: #999;
+									font-size: 1.6rem;
+									font-weight: bold;
+									border-radius: 100%;
+									margin-right: 10px;
+								}
+							}
+
+							.required {
+								color:#BE2E21;
+							}
+						}
+
+						.gold-button {
+							width:100%;
+							background-color:#63BC46;
+							&.disabled {
+								background-color: #BBB;
+								cursor: not-allowed;
+							}
+						}
+
+						.start-kickoff-container {
+							display: none;
+						}
+					}
+				}
+				&#users {
+					
+					#users-sources-container {
+						float: none;
+						width: 100%;
+					}
+					
+					.card {
+						width:100%;	
+					}
+
+					#source-interests-container {
+						float: none;
+						width: 100%;
+						padding: 0;
+
+						#source-categories {
+							& > div {
+								width: 100%;
+								padding: 0px;
+								min-height: 0px;
+							}
+
+							button {
+								float: left;
+								padding: 10px 20px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

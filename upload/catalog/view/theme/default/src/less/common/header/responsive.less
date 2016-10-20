@@ -1,0 +1,223 @@
+@media all and (min-width: 761px) {
+	header .dropdown-toggle {
+		display: block;
+		position: absolute;
+		top: 28px;
+		right: 0px;
+		width: 20px;
+		height: 3px;
+		background-color: #fff;
+		z-index: 13;
+	}
+	header .dropdown-toggle:after,
+	header .dropdown-toggle:before {
+		content: '';
+		position: absolute;
+		top: -7px;
+		left: 0;
+		width: 100%;
+		height: 3px;
+		background-color: #fff;
+	}
+	header .dropdown-toggle:after {
+		top: 7px;
+	}
+	header .dropdown-toggle span {
+		position: absolute;
+		top: -7px;
+		left: 0;
+		width: 100%;
+		height: 20px;
+	}
+}
+@media all and (max-width: 760px) {
+	header .container {
+		max-width:100%;
+		text-align: center;
+	}
+	header #logo {
+		position: relative;
+		float: none;
+		margin: 0 auto;
+	}
+	header #logo a {
+		position: relative;
+	}
+	header #logo #text-logo {
+		margin:0px;
+	}
+	header #logo #logo-u-container {
+		top: -19px;
+		left: 25px;
+	}
+	header.fixed .container #logo a {
+		position:static;
+	}
+	header.fixed #logo #logo-u {
+		top:50%;
+	}
+	header.fixed #text-logo {
+		display: none;
+	}
+	header.fixed .container #logo #logo-u-container {
+		top: 0px;
+		left: 0px;
+		margin: 13px 0;
+		padding: 0;
+	}
+	header.fixed .container #logo #logo-u-container img {
+		height: 100%;
+		position: relative;
+		top: auto;
+		left: auto;
+	}
+	header.fixed #top-links {
+		top:0!important;
+		left:0;
+		width: 100%;
+		padding:10px;
+		text-align: center;
+		opacity:1;
+	}
+	.logged #top-links {
+		display:none;
+	}
+	header.fixed #top-links .dropdown {
+		display:none;
+	}
+	header #top-links.displayed .dropdown {
+		display:block;
+	}
+	header #top-links.displayed #link-register,
+	header.fixed #top-links #link-register {
+		float:none;
+	}
+	header.fixed #top-links #link-register {
+		padding:0px;
+	}
+	header.fixed #top-links #button-register {
+		margin:0 auto;
+		padding:12px 30px;
+		display:block;
+	}
+	header.fixed #top-links #link-home,
+	header.fixed #top-links #button-login {
+		display:none;
+	}
+	header .container #top-links .dropdown #header-username {
+		height:auto;
+		padding-top:0px;
+	}
+	header .container #top-links .dropdown-toggle {
+		display:none;
+	}
+	header .container #top-links .dropdown-menu {
+		position: static;
+		margin: 0px;
+		padding: 0px;
+		background: transparent;
+		box-shadow: none;
+		display: block;
+		border: none;
+	}
+	header .container #top-links li {
+		float: left;
+		clear: both;
+	}
+	header .container #top-links #header-username .dropdown-menu li a:hover,
+	header .container #top-links #header-username .dropdown-menu li a:focus {
+		background-color: transparent;
+		outline:none;
+	}
+	header .container #top-links a {
+		margin-left: 0px;
+		padding: 10px;
+		color: #FFF;
+		font-size: 1.4rem;
+		font-weight: bold;
+		text-shadow: none;
+		border-color: transparent;
+	}
+	header .container #mobile-menu {
+		display:block;
+		position: absolute;
+		top: 28px;
+		right: 30px;
+		width: 20px;
+		height: 3px;
+		background-color: #fff;
+		z-index: 13;
+	}
+	#mobile-menu:after,
+	#mobile-menu:before {
+		content: '';
+		position: absolute;
+		top: -7px;
+		left: 0;
+		width: 100%;
+		height: 3px;
+		background-color: #fff;
+	}
+	#mobile-menu:after {
+		top: 7px;
+	}
+	#mobile-menu span {
+		position: absolute;
+		top: -7px;
+		left: 0;
+		width: 100%;
+		height: 20px;
+	}
+	#top-links {
+		position: fixed;
+		opacity:0;
+	}
+	#top-links.displayed {
+		top: -200px;
+		left: 0;
+		right: 0;
+		padding: 20px 10px 30px;
+		background: rgba(0,0,0,.9);
+		opacity:0;
+		-webkit-transition: .3s;
+		-o-transition: .3s;
+		transition: .3s;
+	}
+	#top-links #link-home,
+	#top-links #button-login {
+		clear:both;
+		float: left;
+		margin: 0px;
+		padding: 10px;
+		color:#FFF;
+		font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+		font-size: 1.4rem;
+		font-weight: bold;
+		text-shadow:none;
+		border-color: transparent;
+	}
+	header #top-links.displayed #header-username i.smaller-user {
+		float:none;
+		margin-top:0px;
+	}
+	header #top-links.displayed #header-username .dropdown-menu {
+		left:10px;
+	}
+	header.fixed .container #top-links.displayed #link-home,
+	header.fixed .container #top-links.displayed #button-login,
+	header .container #top-links.displayed #link-home,
+	header .container #top-links.displayed #button-login {
+		display:block;
+	}
+	header .container #top-links #button-login:hover {
+		border-color:transparent;
+	}
+	#top-links.displayed #button-register {
+		float: left;
+		margin-left:10px;
+		padding:12px 30px;
+		clear: both;
+		display:block;
+		border-radius: 5px;
+	}
+}

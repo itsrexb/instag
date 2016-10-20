@@ -1,0 +1,166 @@
+.modal {
+	background:rgba(0,0,0,0.85);
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	z-index: 6;
+	&#modal-agree {
+		.modal-dialog .close {
+			top:20px;
+		 }
+	}
+		
+	.modal-dialog {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		width:480px;
+		margin:0px auto;
+		transform: translate(-50%,-50%)!important;
+
+		.modal-content {
+			width:480px;
+			padding: 30px 50px 40px 50px;
+			background-color:#333333;
+
+			h4 {
+				margin: 20px 0px;
+				color:#FFFFFF;
+				font-size:1.8rem;
+				font-weight: 600;
+			}
+
+			button {
+				&.close {
+					position: absolute;
+					top: 10px;
+					right: 15px;
+					padding: 0px;
+					color: #FFB600;
+					font-size: 3.6rem;
+					font-weight: normal;
+					text-shadow:none;
+					outline: none;
+					opacity:1;
+				}
+			}
+
+			.modal-header {
+				padding: 0px 15px;
+				color:#FFF;
+				text-align: center;
+				border:none;
+
+				i {
+					&.fa-magnet {
+						padding: 20.5px 22.4px 20px 22.4px;
+						background-color: #8137B0;
+						color: #FFF;
+						font-size: 3rem;
+						border-radius: 100%;
+					}
+					&.fa-instagram {
+						padding: 20px 22px;
+						background-color: #8137B0;
+						color: #FFF;
+						font-size: 3rem;
+						border-radius: 100%;
+					}
+				}
+
+				p {
+					margin-bottom:0px;
+					color:#FFF;
+					font-size:1.3rem;
+				}
+			}
+
+			.modal-body {
+				padding: 15px 0px;
+
+				.form-group {
+					position:relative;
+
+					input {
+						padding:12px 60px 12px 20px;
+						border:1px solid transparent;
+						&:focus {
+							box-shadow:none;
+							outline:none;
+							border-color:transparent;
+						}
+						&:focus + i {
+							color:#6C6C6C;
+						}
+					}
+
+					i {
+						position: absolute;
+						top:10px;
+						right:12px;
+						color:#999;
+						font-size:2.4rem;
+						transition:.3s;
+					}
+				}
+
+				i.fa-lock {
+					right:14px;
+				}
+			}
+
+			.modal-footer {
+				padding: 0px 15px;
+				text-align: center;
+				border:none;
+
+				p {
+					margin-bottom:0px;
+					color:#BFBFBF;
+					font-size: 1.1rem;
+				}
+
+				button {
+					padding:15px 30px;
+					background-color:#FFB600;
+					color:#FFFEFE;
+					font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+					font-size:1.3rem;
+					font-weight: bold;
+					outline:none;
+					border-radius: 6px;
+					border-color:transparent!important;
+					transition:.3s;
+					&.cancel {
+						margin-right:5px;
+						background:#BE2E21;
+					}
+					&.confirm {
+						margin-left:5px;
+						background:#63BC46;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media all and (max-width: 730px) {
+	.modal {
+
+		.modal-content {
+			max-width:100%;
+			padding: 30px 30px 40px 30px;
+
+			h4 {
+				font-size: 1.5rem;
+			}
+
+			.modal-header {
+				padding: 0px;
+
+				p {
+					font-size: 1.2rem;
+				}
+			}
+		}
+	}
+}
